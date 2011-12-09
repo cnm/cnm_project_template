@@ -1,0 +1,121 @@
+\documentclass{llncs}
+%\RequirePackage[english]{babel} % Se fizerem o texto em ingles
+\usepackage[portuguese]{babel}   
+\usepackage[latin1]{inputenc}
+
+\usepackage{makeidx}  % allows for indexgeneration
+\usepackage{graphicx}  % allows for indexgeneration
+\usepackage{subfig}  % allows for indexgeneration
+
+\begin{document}
+\mainmatter              % start of the contributions
+
+\title{Normas para a realização do relatório de projecto}
+\author{
+	Teresa Vazão\\
+	email1: teresa.vazao@ist.utl.pt \\
+}
+\institute{INESC-ID}
+
+\maketitle              % typeset the title of the contribution
+
+\begin{abstract}
+    In here put your abstract. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+\keywords{keyworkd1, keyworkd2, keyworkd3}
+\end{abstract}
+
+\section{Introdução}
+\subsection{Enquadramento}
+Nesta secção devem descrever a área em que a vossa tese se insere, de forma a contextualizar
+o problema que vão resolver. No âmbito da área devem identificar os principais problemas que existem.
+
+\subsection{O problema e a proposta de solução}
+
+Nesta secção devem identificar objectivamente o problema que vão resolver e o tipo de solução que vão adoptar.
+
+Exemplos de problemas que podem ser endereçados e tipos de soluções:
+\begin{itemize}
+\item Esta situação ainda não tem solução --  vou propor uma nova.
+\item Esta situação ainda não tem solução --  vou propor uma nova
+\item Existem soluções para aspectos específicos, mas não existe uma que integre os vários aspectos  --   vou integrar as várias
+\item Existem demonstrações matemáticas ou validações por simulação, mas será que funcionam na realidade (quando as aproximações que se fizerem deixarem de ser válidas)  --   vou fazer um protótipo experimental
+\item Existem demasiadas propostas de soluções, validadas em diferentes condições  --   vou fazer um estudo comparativo que as avalie sob diferentes perspectivas
+\item Existe uma boa solução, mas com um desempenho variável em função da configuração --   vou fazer um estudo que permita verificar em que medida é possível ajustar os parâmetros automaticamente às diferentes situações.
+\item Existe uma teccnologia que ainda não está devidamente explorada --   vou fazer um protótipo de ilustre o seu uso.
+\end{itemize}
+
+\subsection{Contribuições da tese}
+Nesta secção devem identificar como é que a vossa solução vai contribuir para resolver o problema e quais as contribuições do presente relatório nesse contexto!
+
+\subsection{Estrutura do relatório}
+Nesta secção devem identificar a estrutura do documento, em termos de capítulos e anexos e do que se pode encontrar em cada um deles. Explicar as opções que foram tomadas em termos da informação em anexo. 
+
+\textbf{No final desta secção o leitor deve ter percebido:
+\begin{itemize}
+ \item as principais características da área;
+\item o problema que se pretende resolver;
+\item a solução que se pretende implementar;
+\item as contribuições que a solução oferece para a resolução do problema proposto.
+\item que tipo de informação e onde é que pode encontrar  ao longo do relatório.
+\end{itemize}}
+\section{Teste}
+
+\section{Estado da arte e/ou trabalho relacionado}
+
+Nesta secção devem apresentar o que andaram a ler. A estrutura depende muito do vosso trabalho/abordagem, mas deve sempre começar por uma apresentação da estruturação seguida. Posteriormente, devem apresentar cada item numa secção diferente. Exemplos de estruturações:
+\begin{itemize}
+\item normas, trabalhos científicos e ferramentas comerciais;
+\item trabalhos da área B, da área C, etc...
+\end{itemize}
+
+Podem terminar cada secção com uma pequena avaliação comparativa.
+No final do capítulo devem fazer uma síntese. Esta síntese pode vir acompanhada duma tabela com as várias soluções, as várias características que vos interessam e com a indicação das soluções que satisfazem as vossas necessidades. Podem terminar a secção sumariando o vosso trabalho numa frase.
+
+\section{Arquitectura da solução}
+
+Esta secção deve englobar:
+
+Uma descrição de alto nível da arquitectura do vosso sistema. Esta descrição pode ser:
+\begin{itemize}
+\item	A arquitectura de rede, explicando os principais componentes e as funções que executam.
+\item A arquitectura de SW da aplicação, explicando os principais componentes e as funções que executam.
+\item Uma identificação das tecnologias que vão usar e das razões da sua escolha.
+\end{itemize}
+
+Esta secção será mais sólida se conseguirem ter um implementação simples já em curso, pois conseguem ter as tecnologias seleccionadas (após uma experimentação) e obter um desenho da arquitectura mais realista. 
+
+\section{Metodologia}
+\subsection{Metodologia científica}
+
+Nesta secção devem explicar como pensam abordar a vossa de tese, tendo em conta o problema, as contribuições que se propõem dar, a arquitectura definida. 
+
+Caso já tenham iniciado a implementação, ao ler esta secção devemos saber, por exemplo:
+\begin{itemize}
+\item como procederam às escolhas das ferramentas, linguagens de programação, ambientes de desenvolvimento, HW.
+\item como efectuaram a  sua validação e que problema já encontraram
+\item como prevêm desenvolver a arquitectura proposta: por onde vão começar, como vão integrar os componentes, que dificuldades esperam encontrar e que estratégias planeam para as ultrapassar
+\item como pensam testar a solução e validar a vossa ideia, que processo vão utilizar durante o desenvolvimento para facilitar a realização de testes e a recolha de resultados.
+\end{itemize}
+
+
+Caso ainda não tenham iniciado a implementação, ao ler esta secção devemos saber, por exemplo:
+\begin{itemize}
+\item se pensam usar um simulador ou fazer um protótipo
+\item se vai usar um simulador se já sabem qual é, ou como pensam escolhê-lo
+\item se vão fazer um protótipo, que equipamentos/linguagens de programação vão escolher/usar 
+\item como pensam testar a solução e validar a vossa ideia
+\end{itemize}
+
+\subsection{Plano de trabalho}
+Nesta secção devem apresentar uma calendarização esperadas das vossas actividades.
+
+\section{Conclusões}
+\subsection{Síntese}
+Neste secção deve-se fazer o resumo do trabalho efectuado, retomando a ideia, as contribuições definidas e a forma como estas se materializaram
+\subsection{Conclusões}
+Nesta secção devem ser retiradas conclusões do trabalho realizado, em face dos resultados obtidos \cite{exemplo}.
+
+\bibliographystyle{splncs03}
+\bibliography{references}
+
+\end{document}
