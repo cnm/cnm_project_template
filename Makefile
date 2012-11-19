@@ -5,7 +5,10 @@ PDFLATEX = ps2pdf
 DVIPS = dvips
 RM = rm -f
 
+# Rename CHANGE_THIS to the filename of your main .tex file (do not include the .tex)
+# MASTER = template_project_latex
 
+MASTER = CHANGE_THIS
 
 # Obtain the architecture
 ifndef _ARCH
@@ -24,8 +27,6 @@ endif
 RERUN = "(There were undefined references|Rerun to get	\
 	(cross-references|the bars) right)"
 RERUNBIB = "No file.*\.bbl|Citation.*undefined"
-
-MASTER = CHANGE_THIS
 
 TEXFILES = $(wildcard *.tex *.cls *.sty)
 FIGURES = $(wildcard figures/*.eps)
