@@ -9,3 +9,8 @@ Debian Packages
 ===============
 
 Please install the **texlive-latex-extra** package.
+
+Rules for the template
+======================
+
+http://da.ist.utl.pt/dissertacao-de-mestrado/
