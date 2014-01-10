@@ -4,3 +4,6 @@
 *.log
 *.dvi
 *.ps
+*.*.make
+*.d
+*.fls
